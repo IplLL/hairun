@@ -1,0 +1,7 @@
+2019/03/18 01:27:48 [notice] 103302#103302: signal process started
+2019/03/18 01:44:38 [notice] 103828#103828: signal process started
+2019/03/18 01:47:00 [notice] 104221#104221: signal process started
+2019/03/20 01:13:11 [emerg] 112054#112054: "location" directive is not allowed here in /etc/nginx/sites-enabled/default:15
+2019/03/20 01:14:28 [notice] 112063#112063: signal process started
+2019/03/20 01:23:19 [notice] 112092#112092: signal process started
+2019/03/21 20:31:57 [notice] 5164#5164: signal process started
