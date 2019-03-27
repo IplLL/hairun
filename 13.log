@@ -1,0 +1,1656 @@
+---------------------------------------------------------------
+[ 2019-03-13T11:56:07+08:00 ] 172.16.10.24 GET /
+[ info ] 172.16.10.54/ [运行时间：0.065055s][吞吐率：15.37req/s] [内存消耗：688.35kb] [文件加载：81]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000087s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000700s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /var/www/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000269s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /var/www/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/public/../application/index/view/index_index.html [ array (
+  0 => 'proType',
+  1 => 'newType',
+  2 => 'Navigation',
+  3 => 'site',
+  4 => 'lang',
+  5 => 'config',
+  6 => 'content',
+  7 => 'picture',
+  8 => 'recommendPro',
+  9 => 'recommendNew',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008830s ] mysql:host=localhost;port=3306;dbname=linkjoint;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_language` [ RunTime:0.009285s ]
+[ sql ] [ SQL ] SELECT `abbr_name` FROM `lj_language` [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_category` [ RunTime:0.004828s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_category` WHERE  `lang` = 'en'  AND `type` = 'product' [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_category` WHERE  `lang` = 'en'  AND `type` = 'news' [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_navigation` [ RunTime:0.001724s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_navigation` WHERE  `lang` = 'en' ORDER BY pid asc,sort desc [ RunTime:0.003101s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_content` [ RunTime:0.002394s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_content` WHERE  `type` = 'index' [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_picture` [ RunTime:0.001142s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_picture` WHERE  `type` = 'index' [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_product` [ RunTime:0.001899s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_product` WHERE  `flag` = 'hot' [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_news` [ RunTime:0.001212s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_news` WHERE  `flag` = 'hot' [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2019-03-13T11:56:10+08:00 ] 172.16.10.24 GET /admin/index/login.html
+[ info ] 172.16.10.54/admin/index/login.html [运行时间：0.048631s][吞吐率：20.56req/s] [内存消耗：418.01kb] [文件加载：75]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000525s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000165s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /var/www/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.001384s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:56:10+08:00 ] 172.16.10.24 GET /captcha
+[ info ] 172.16.10.54/captcha [运行时间：0.040765s][吞吐率：24.53req/s] [内存消耗：251.88kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000529s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:56:11+08:00 ] 172.16.10.24 GET /admin/ajax/lang?callback=define&controllername=index&v=1552449370
+[ info ] 172.16.10.54/admin/ajax/lang?callback=define&controllername=index&v=1552449370 [运行时间：0.010728s][吞吐率：93.21req/s] [内存消耗：485.06kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000334s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1552449370',
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000110s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /var/www/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000074s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:56:20+08:00 ] 172.16.10.24 GET /captcha?r=0.07683982284303559
+[ info ] 172.16.10.54/captcha?r=0.07683982284303559 [运行时间：0.004836s][吞吐率：206.78req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000530s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.07683982284303559',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:56:23+08:00 ] 172.16.10.24 GET /captcha?r=0.4707605170199838
+[ info ] 172.16.10.54/captcha?r=0.4707605170199838 [运行时间：0.012871s][吞吐率：77.69req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004692s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4707605170199838',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:56:24+08:00 ] 172.16.10.24 GET /captcha?r=0.7580450368824105
+[ info ] 172.16.10.54/captcha?r=0.7580450368824105 [运行时间：0.007815s][吞吐率：127.96req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002033s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.7580450368824105',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:56:24+08:00 ] 172.16.10.24 GET /captcha?r=0.6709184727186743
+[ info ] 172.16.10.54/captcha?r=0.6709184727186743 [运行时间：0.004908s][吞吐率：203.75req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000033s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000668s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.6709184727186743',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:56:27+08:00 ] 172.16.10.24 GET /assets/css/bootstrap.min.css.map
+[ info ] 172.16.10.54/assets/css/bootstrap.min.css.map [运行时间：0.007445s][吞吐率：134.32req/s] [内存消耗：246.31kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001914s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:56:27+08:00 ] 172.16.10.24 GET /assets/css/backend.css.map
+[ info ] 172.16.10.54/assets/css/backend.css.map [运行时间：0.009883s][吞吐率：101.18req/s] [内存消耗：248.28kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001602s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:56:27+08:00 ] 172.16.10.24 GET /assets/css/skins/skin-green.css.map
+[ info ] 172.16.10.54/assets/css/skins/skin-green.css.map [运行时间：0.010377s][吞吐率：96.37req/s] [内存消耗：245.17kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006808s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:56:29+08:00 ] 172.16.10.24 GET /captcha?r=0.36094870681969704
+[ info ] 172.16.10.54/captcha?r=0.36094870681969704 [运行时间：0.005044s][吞吐率：198.26req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000662s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.36094870681969704',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:00+08:00 ] 172.16.10.24 GET /captcha?r=0.2078900051388788
+[ info ] 172.16.10.54/captcha?r=0.2078900051388788 [运行时间：0.003058s][吞吐率：326.99req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000368s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.2078900051388788',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:24+08:00 ] 172.16.10.24 GET /captcha?r=0.07683982284303559
+[ info ] 172.16.10.54/captcha?r=0.07683982284303559 [运行时间：0.004859s][吞吐率：205.79req/s] [内存消耗：250.70kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000088s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000698s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.07683982284303559',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:28+08:00 ] 172.16.10.24 GET /
+[ info ] 172.16.10.54/ [运行时间：0.047680s][吞吐率：20.97req/s] [内存消耗：602.27kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000457s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/captcha?r=0.07683982284303559',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /var/www/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000158s ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /var/www/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /var/www/application/index/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/public/../application/index/view/index_index.html [ array (
+  0 => 'proType',
+  1 => 'newType',
+  2 => 'Navigation',
+  3 => 'site',
+  4 => 'lang',
+  5 => 'config',
+  6 => 'content',
+  7 => 'picture',
+  8 => 'recommendPro',
+  9 => 'recommendNew',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004836s ] mysql:host=localhost;port=3306;dbname=linkjoint;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_language` [ RunTime:0.012802s ]
+[ sql ] [ SQL ] SELECT `abbr_name` FROM `lj_language` [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_category` [ RunTime:0.001725s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_category` WHERE  `lang` = 'en'  AND `type` = 'product' [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_category` WHERE  `lang` = 'en'  AND `type` = 'news' [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_navigation` [ RunTime:0.001312s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_navigation` WHERE  `lang` = 'en' ORDER BY pid asc,sort desc [ RunTime:0.004435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_content` [ RunTime:0.001121s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_content` WHERE  `type` = 'index' [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_picture` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_picture` WHERE  `type` = 'index' [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_product` [ RunTime:0.003556s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_product` WHERE  `flag` = 'hot' [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `lj_news` [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT * FROM `lj_news` WHERE  `flag` = 'hot' [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:31+08:00 ] 172.16.10.24 GET /admin/index/login.html
+[ info ] 172.16.10.54/admin/index/login.html [运行时间：0.016083s][吞吐率：62.18req/s] [内存消耗：393.33kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001176s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000338s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /var/www/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /var/www/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000097s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:57:31+08:00 ] 172.16.10.24 GET /captcha
+[ info ] 172.16.10.54/captcha [运行时间：0.003352s][吞吐率：298.31req/s] [内存消耗：250.61kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000427s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:31+08:00 ] 172.16.10.24 GET /admin/ajax/lang?callback=define&controllername=index&v=1552449451
+[ info ] 172.16.10.54/admin/ajax/lang?callback=define&controllername=index&v=1552449451 [运行时间：0.008632s][吞吐率：115.85req/s] [内存消耗：483.83kb] [文件加载：79]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001119s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'v' => '1552449451',
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000120s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /var/www/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /var/www/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000048s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:57:33+08:00 ] 172.16.10.24 GET /captcha?r=0.7184945529586722
+[ info ] 172.16.10.54/captcha?r=0.7184945529586722 [运行时间：0.003385s][吞吐率：295.42req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000492s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.7184945529586722',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:33+08:00 ] 172.16.10.24 GET /captcha?r=0.4960743120758033
+[ info ] 172.16.10.54/captcha?r=0.4960743120758033 [运行时间：0.002882s][吞吐率：346.98req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000408s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4960743120758033',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:34+08:00 ] 172.16.10.24 GET /captcha?r=0.5934417690047233
+[ info ] 172.16.10.54/captcha?r=0.5934417690047233 [运行时间：0.003534s][吞吐率：282.96req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000570s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.5934417690047233',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:34+08:00 ] 172.16.10.24 GET /captcha?r=0.797542470155802
+[ info ] 172.16.10.54/captcha?r=0.797542470155802 [运行时间：0.005063s][吞吐率：197.52req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000664s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.797542470155802',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:34+08:00 ] 172.16.10.24 GET /captcha?r=0.6493080844981225
+[ info ] 172.16.10.54/captcha?r=0.6493080844981225 [运行时间：0.008764s][吞吐率：114.10req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001035s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.6493080844981225',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:34+08:00 ] 172.16.10.24 GET /captcha?r=0.4057644670586493
+[ info ] 172.16.10.54/captcha?r=0.4057644670586493 [运行时间：0.004301s][吞吐率：232.50req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000620s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4057644670586493',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:34+08:00 ] 172.16.10.24 GET /captcha?r=0.1638561376225507
+[ info ] 172.16.10.54/captcha?r=0.1638561376225507 [运行时间：0.003188s][吞吐率：313.66req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000497s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.1638561376225507',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:36+08:00 ] 172.16.10.24 GET /captcha?r=0.5557994546155618
+[ info ] 172.16.10.54/captcha?r=0.5557994546155618 [运行时间：0.006219s][吞吐率：160.79req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000722s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002641s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.5557994546155618',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:36+08:00 ] 172.16.10.24 GET /captcha?r=0.5600633811457525
+[ info ] 172.16.10.54/captcha?r=0.5600633811457525 [运行时间：0.015625s][吞吐率：64.00req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006599s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.5600633811457525',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:37+08:00 ] 172.16.10.24 GET /captcha?r=0.24786892457059007
+[ info ] 172.16.10.54/captcha?r=0.24786892457059007 [运行时间：0.014752s][吞吐率：67.79req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003948s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.24786892457059007',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:38+08:00 ] 172.16.10.24 GET /captcha?r=0.6824323081668529
+[ info ] 172.16.10.54/captcha?r=0.6824323081668529 [运行时间：0.006495s][吞吐率：153.96req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000939s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.6824323081668529',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:38+08:00 ] 172.16.10.24 GET /captcha?r=0.2715458666279682
+[ info ] 172.16.10.54/captcha?r=0.2715458666279682 [运行时间：0.003794s][吞吐率：263.56req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000446s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.2715458666279682',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:38+08:00 ] 172.16.10.24 GET /captcha?r=0.9080514922998197
+[ info ] 172.16.10.54/captcha?r=0.9080514922998197 [运行时间：0.003029s][吞吐率：330.16req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000439s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.9080514922998197',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:38+08:00 ] 172.16.10.24 GET /captcha?r=0.12644404809704524
+[ info ] 172.16.10.54/captcha?r=0.12644404809704524 [运行时间：0.006565s][吞吐率：152.32req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000778s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.12644404809704524',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:39+08:00 ] 172.16.10.24 GET /captcha?r=0.4778271552535669
+[ info ] 172.16.10.54/captcha?r=0.4778271552535669 [运行时间：0.004699s][吞吐率：212.81req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000744s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4778271552535669',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:39+08:00 ] 172.16.10.24 GET /captcha?r=0.09194175038477659
+[ info ] 172.16.10.54/captcha?r=0.09194175038477659 [运行时间：0.005012s][吞吐率：199.52req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000786s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.09194175038477659',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:39+08:00 ] 172.16.10.24 GET /captcha?r=0.22740392010846988
+[ info ] 172.16.10.54/captcha?r=0.22740392010846988 [运行时间：0.004412s][吞吐率：226.66req/s] [内存消耗：250.67kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000633s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.22740392010846988',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:45+08:00 ] 172.16.10.24 GET /assets/css/backend.css.map
+[ info ] 172.16.10.54/assets/css/backend.css.map [运行时间：0.002349s][吞吐率：425.73req/s] [内存消耗：245.09kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000362s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'backend.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:57:45+08:00 ] 172.16.10.24 GET /assets/css/bootstrap.min.css.map
+[ info ] 172.16.10.54/assets/css/bootstrap.min.css.map [运行时间：0.002754s][吞吐率：363.11req/s] [内存消耗：245.16kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000704s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'bootstrap.min.css.map',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:57:45+08:00 ] 172.16.10.24 GET /assets/css/skins/skin-green.css.map
+[ info ] 172.16.10.54/assets/css/skins/skin-green.css.map [运行时间：0.002236s][吞吐率：447.20req/s] [内存消耗：245.11kb] [文件加载：53]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000347s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'assets',
+    1 => 'css',
+    2 => 'skins',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-03-13T11:57:51+08:00 ] 172.16.10.24 GET /captcha?r=0.4057644670586493
+[ info ] 172.16.10.54/captcha?r=0.4057644670586493 [运行时间：0.005470s][吞吐率：182.81req/s] [内存消耗：250.70kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000728s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4057644670586493',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:55+08:00 ] 172.16.10.24 GET /captcha?r=0.4057644670586493
+[ info ] 172.16.10.54/captcha?r=0.4057644670586493 [运行时间：0.004635s][吞吐率：215.75req/s] [内存消耗：250.73kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000596s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4057644670586493',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T11:57:56+08:00 ] 172.16.10.24 GET /captcha?r=0.4057644670586493
+[ info ] 172.16.10.54/captcha?r=0.4057644670586493 [运行时间：0.003703s][吞吐率：270.06req/s] [内存消耗：250.73kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000516s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.4057644670586493',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T12:00:57+08:00 ] 172.16.10.24 GET /captcha?r=0.5972488770985473
+[ info ] 172.16.10.54/captcha?r=0.5972488770985473 [运行时间：0.004886s][吞吐率：204.67req/s] [内存消耗：250.74kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000626s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.5972488770985473',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
+---------------------------------------------------------------
+[ 2019-03-13T12:01:00+08:00 ] 172.16.10.24 GET /captcha?r=0.39041516237198715
+[ info ] 172.16.10.54/captcha?r=0.39041516237198715 [运行时间：0.004423s][吞吐率：226.10req/s] [内存消耗：250.74kb] [文件加载：55]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000631s ]
+[ info ] [ LANG ] /var/www/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'lang=en; PHPSESSID=hbqufhc1b91np066deb2ct7a91',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://172.16.10.54/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '172.16.10.54',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.39041516237198715',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /var/www/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]致命错误: Call to undefined function think\captcha\imagecreate()[/var/www/vendor/topthink/think-captcha/src/Captcha.php:149]
